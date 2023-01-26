@@ -102,10 +102,10 @@ print(f"LEN | OCCURENCES | NR.")
 hvezdicka = "*"
 mezera = " "
 cisla = set(delka)
-frekvencni_cisla = []
+serazena_cisla = []
 for cislo in cisla:
-    frekvencni_cisla.append(delka.count(cislo))
-nejvyssi_cislo = max(frekvencni_cisla)
+    serazena_cisla.append(delka.count(cislo))
+nejvyssi_cislo = max(serazena_cisla)
 for pocet in cisla:
     pocet_mezer= nejvyssi_cislo - delka.count(pocet)
     print(f"{pocet} | {hvezdicka * delka.count(pocet)} {mezera * pocet_mezer} | {delka.count(pocet)}")
